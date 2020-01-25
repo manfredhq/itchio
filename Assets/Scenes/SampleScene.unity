@@ -196,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 1945028097173138906, guid: 3513fba2cb4c52b40b7195eabff48490,
         type: 3}
       propertyPath: TimeInvulnerability
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1945028097173138907, guid: 3513fba2cb4c52b40b7195eabff48490,
         type: 3}

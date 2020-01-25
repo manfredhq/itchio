@@ -11,6 +11,8 @@ public class SpawnEnnemy : MonoBehaviour
     public float WaitTimeBetweenSpawn = 2f;
     public int SpawnAtATime = 1;
 
+    private int RoundToAugmentSpawning = 2;
+
     private float NextTimeToSpawn = 0f;
     // Start is called before the first frame update
     private void Start()
@@ -21,6 +23,11 @@ public class SpawnEnnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (RoundToAugmentSpawning <= 0)
+        {
+            SpawnAtATime++;
+            RoundToAugmentSpawning = 3;
+        }
         if (NextTimeToSpawn <= Time.time)
         {
             NextTimeToSpawn = Time.time + WaitTimeBetweenSpawn;
@@ -30,7 +37,7 @@ public class SpawnEnnemy : MonoBehaviour
 
     private void Spawn()
     {
-        
+        RoundToAugmentSpawning--;
         for (int i = 0; i < SpawnAtATime; i++)
         {
             Enemy enemy = Instantiate(enemies[Random.Range(0, enemies.Count)],transform.position, Quaternion.identity);
