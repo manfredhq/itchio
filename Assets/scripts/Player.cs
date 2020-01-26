@@ -18,6 +18,9 @@ public class Player : MonoBehaviour
     private Vector2 mousePos;
 
     public int hp;
+    public int level = 1;
+    public int xpToNextLevel = 1;
+    public int actualXp = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -77,5 +80,20 @@ public class Player : MonoBehaviour
             bonus.makeAction(this);
             Destroy(collision.gameObject);
         }
+    }
+
+    public void GainXp(int amount)
+    {
+        actualXp += amount;
+        while(actualXp > xpToNextLevel)
+        {
+            level++;
+            actualXp -= xpToNextLevel;
+            GetComponent<Shooting>().damage++;
+            GetComponent<Shooting>().RPM -= level / 100;
+            hp += level;
+            xpToNextLevel = level * level;
+        }
+        //todo
     }
 }

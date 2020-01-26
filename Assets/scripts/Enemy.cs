@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
 
     public int hp;
     public int damage = 1;
+    public int xpDrop = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +58,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        player.gameObject.GetComponent<Player>().GainXp(xpDrop);
         Destroy(gameObject);
     }
 }

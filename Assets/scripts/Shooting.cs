@@ -7,7 +7,7 @@ public class Shooting : MonoBehaviour
 
     public Transform firePoint;
 
-    public int damage;
+    public int damage = 3;
 
     public GameObject bulletPrefab;
 
