@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Pathfinding;
 public class SpawnEnnemy : MonoBehaviour
 {
 
@@ -42,6 +42,7 @@ public class SpawnEnnemy : MonoBehaviour
         {
             Enemy enemy = Instantiate(enemies[Random.Range(0, enemies.Count)],transform.position, Quaternion.identity);
             enemy.GetComponent<Enemy>().player = target;
+            enemy.GetComponent<AIDestinationSetter>().target = target;
             enemy.gameObject.name = "enemy";
         }
         

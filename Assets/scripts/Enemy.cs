@@ -30,12 +30,12 @@ public class Enemy : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        moveCharacter(movement);
+        //moveCharacter(movement);
     }
-    void moveCharacter(Vector2 direction)
+    /*void moveCharacter(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
-    }
+    }*/
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
