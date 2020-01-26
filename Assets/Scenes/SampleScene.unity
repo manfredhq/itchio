@@ -698,7 +698,7 @@ PrefabInstance:
     - target: {fileID: 2033993144187377392, guid: 42da38d2743fbda42a11bf0c383eb977,
         type: 3}
       propertyPath: WaitTimeBetweenSpawn
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2033993144187377392, guid: 42da38d2743fbda42a11bf0c383eb977,
         type: 3}
@@ -1188,7 +1188,7 @@ PrefabInstance:
     - target: {fileID: 2033993144187377392, guid: 42da38d2743fbda42a11bf0c383eb977,
         type: 3}
       propertyPath: WaitTimeBetweenSpawn
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2033993144187377392, guid: 42da38d2743fbda42a11bf0c383eb977,
         type: 3}
