@@ -980,3 +980,72 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!1001 &3806367825557479759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.8123717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315264, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806367825586315265, guid: 28e52503524467943807c54ad4e12883,
+        type: 3}
+      propertyPath: m_Name
+      value: LootSpawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 28e52503524467943807c54ad4e12883, type: 3}

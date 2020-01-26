@@ -124,6 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f3c829ff92083419b42fbdfa76a411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loot:
+  - {fileID: 7406117310180415195, guid: e936cf148ac80e54fa39c10e2e27bc50, type: 3}
   player: {fileID: 1945028097173138905, guid: 3513fba2cb4c52b40b7195eabff48490, type: 3}
   moveSpeed: 3
   hp: 10

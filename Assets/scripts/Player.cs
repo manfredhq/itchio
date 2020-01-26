@@ -68,4 +68,14 @@ public class Player : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        IBonus bonus = collision.gameObject.GetComponent<IBonus>();
+        if (bonus != null)
+        {
+            bonus.makeAction(this);
+            Destroy(collision.gameObject);
+        }
+    }
 }

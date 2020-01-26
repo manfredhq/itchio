@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hpup : IBonus
+public class Hpup : MonoBehaviour, IBonus
 {
     void IBonus.makeAction(Player player)
     {
