@@ -18,7 +18,7 @@ public class LootSpawner : MonoBehaviour
         if (NextSpawnTime < Time.time && SpawnedItem == null)
         {
             int random = Random.Range(0, loot.Count);
-            SpawnedItem = Instantiate(loot[random], transform.position, Quaternion.identity);
+            SpawnedItem = Instantiate(loot[random], new Vector3(transform.position.x, transform.position.y, transform.position.z -1), Quaternion.identity);
             NextSpawnTime = Time.time + TimeBetweenSpawn;
             //spawn the bonus
         }
