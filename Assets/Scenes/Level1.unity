@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -399, y: 228.4}
+  m_AnchoredPosition: {x: -378.8, y: 228.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &56229300
@@ -1629,12 +1629,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIeyzMdHnUAIAAPcEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMziVjvkNvLRDSA4EJ6eTii5DWWIMseSQ5fA3/vSvZxi6dnhBv367e2135SoSyOTCnzdIIvtIcyPcO8WfyrdMEX+FE91ptxQVqzqfgLvUkGjjv1AmNeM+nWZ2BM4L9UHvpyRGChRKJNtmC72GmrbMIJ1RawJDRzmcrhK4dcsKf7tSnnPHUn/jTBU/TqHPDIwPlwDTUmljTSlahmKRZDtxLbsi9qKbjKRAV2qk40dPI19dSClupIe6cB7fbPAUD3i4XFM0FBb2nAQIpiH3qvNR29jpJLLhKl6HnuTDYpbIs+anL1mXUHkpxX1QW/qL+aBxklUVX/8S7vRBOjM5e63tLUy4V7PBOz4xa1+ptG563pIceHak80J2EzxTUm14aXSiOQWcKn1pY6M+bv3drsxTYocFLqQ9gkf9/Qt7DLbg/zaTIdqH1wxLYSh0aHuYPBofzCwWH7bBVCUS9it8WPui+vUZV4EUY6zBUuVRe3k4XxlPJIvTMuyncTBsFAa5E56CodOcNlnGPI3yIta59iLxQ/2Cqy6tY/Q4eUgLc8KPoIbTRx/uwbKqPK7DpunBSKGhE+8Ab9mmmlSo3rN2TOm1bmISyVtq+EPzv1SJsMJ0+DzgdjqfDMWO97nM/2sFu0htNdgmNaETC7gmFPqnclEKr9uDUVFNc4Z7V35HO0tA8bDs39LgUl0y3Wi5UorfMAKh1WeEuHAxegg+TL7jABm3BOaHCvMk1JlKzA/D4XigOThcnZ2jcVIlJLr6080hMZuHDEZMbuf0BUEsDBBQAAAgIAAAIIexQbhl/bAAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01FFQSi9KLMgoBoqAOaWZKSB2tFKysaWlhXFKoomZpYlZcrKhroWRQVJqkrmhqXlSWqJBooFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAgh7LMx0edQAgAA9wQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAgh7FBuGX9sAAAAeAAAAAkAJAAAAAAAAAAAAAAAnQIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABUAwAAAAA=
+    dataString: UEsDBBQAAAgIAAAIIezl+9e7UAIAAPUEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMmS2jAQ/RVK5zBllmHJLQGGyYGBGiY1F1+E1MYqZMklycNW/Htaso0dUjnRvH7d/XqRr0QomwNz2iyN4CvNgXzvEG+Tb53G+QonutdqKy5Qcz4Fd6kn0cB5p05oxHs+zOoMnBHsh9pLT44QLJRItMkWfA8zbZ1FOKHSArqMdj5aIXTtkBP+dKc+5IxWf+ytC1rTqHNDk4FyYBpqTaxpJatQTNIsB+4lN+RJzZ6UNIXNVIzoaeizaymFrbQQd85Dr9s8BQO+WS4othbq954GCKQg9qnzQtvR6ySx4CpVhp7nwuCMyrTkpy4Hl1F7KKV9UVn4Qv3nUZBVJl394+/2gjsxOnut6/YiX8Olgh3e6ZlR61qTbcPzlvQwoSOVB7qT8JmCetNLowvF0elM4UMLC/158/fe2iwFdmjwUuoDWOT/34/v4Ra6P82kyHb30SOwlToMPGwfDC7nFwoOt2GrFIh6Fb8tfNB9+4gqx4sw1qGr6lJ5eTtdGE8lizAz303hZtooCHAlOgdFpTtvMI17XOGDr1X2wfNC/XOpile++hU8hAS44UfRg2ujj/dl2VQfV2DTdeGkUNCI9o43nNNMK1VeWHsmddi2MAllrbB9Ifjfp0XYYDqdDDgdjqbDEWO97qQf7WA37j2PdwmNaETC7QmFfVK5KYVW48GtqSa5wjurvyKdpaF5uHZu6HEpLplujVyoRG+ZAVDrMsNdOBgsgg+TL7jAAW3BOaHCvsk1JlKzA/D4nigOnS5OztC4yRKTXHxp55GYzMJnIyY3cvsDUEsDBBQAAAgIAAAIIexQbhl/bAAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01FFQSi9KLMgoBoqAOaWZKSB2tFKysaWlhXFKoomZpYlZcrKhroWRQVJqkrmhqXlSWqJBooFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAgh7OX717tQAgAA9QQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAgh7FBuGX9sAAAAeAAAAAkAJAAAAAAAAAAAAAAAnQIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABUAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 1
+  showNavGraphs: 0
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -2051,10 +2051,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2239,7 +2239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -399, y: 278.7}
+  m_AnchoredPosition: {x: -378.8, y: 278.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1643686167
