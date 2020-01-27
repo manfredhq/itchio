@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class BurstM4 : MonoBehaviour, IWeapon
 {
-    public int damage;
+    public float damage;
     public float bulletForce;
     public float RPM;
+    public int nbBullet;
     public WeaponType weaponType = WeaponType.pistol;
 
 
@@ -19,31 +20,27 @@ public class BurstM4 : MonoBehaviour, IWeapon
         bulletForce = bulletSpeed;
         weaponType = WeaponType.pistol;
     }
-    public void Shoot(GameObject bulletPrefab, Transform firePoint)
+    public void Shoot(GameObject bulletPrefab, Transform firePoint, Shooting shooter)
     {
         
-        StartCoroutine(Temporise(RPM, bulletPrefab, firePoint));
+        StartCoroutine(Temporise(RPM, bulletPrefab, firePoint, shooter));
         
     }
 
-    IEnumerator Temporise(float timer, GameObject bulletPrefab, Transform firePoint)
+    IEnumerator Temporise(float timer, GameObject bulletPrefab, Transform firePoint, Shooting shooter)
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Bullet bul = bullet.GetComponent<Bullet>();
-        if (bul != null)
+        for (int i = 0; i < nbBullet; i++)
         {
-            bul.damage = damage;
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Bullet bul = bullet.GetComponent<Bullet>();
+            if (bul != null)
+            {
+                bul.damage = damage * shooter.damage;
+            }
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
+            yield return new WaitForSecondsRealtime(timer);
         }
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
-        yield return new WaitForSecondsRealtime(timer);
-        GameObject bullet2 = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Bullet bul2 = bullet2.GetComponent<Bullet>();
-        if (bul2 != null)
-        {
-            bul2.damage = damage;
-        }
-        Rigidbody2D rb2 = bullet2.GetComponent<Rigidbody2D>();
-        rb2.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
+        
     }
 }

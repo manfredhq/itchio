@@ -21,14 +21,14 @@ public class Shotgun : MonoBehaviour , IWeapon
         weaponType = WeaponType.pistol;
     }
 
-    public void Shoot(GameObject bulletPrefab, Transform firePoint)
+    public void Shoot(GameObject bulletPrefab, Transform firePoint, Shooting shooter)
     {
 
         GameObject bullet1 = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bul1 = bullet1.GetComponent<Bullet>();
         if (bul1 != null)
         {
-            bul1.damage = damage;
+            bul1.damage = damage * shooter.damage;
         }
         Rigidbody2D rb1 = bullet1.GetComponent<Rigidbody2D>();
         rb1.AddForce((firePoint.right) * bulletForce, ForceMode2D.Impulse);
@@ -37,7 +37,7 @@ public class Shotgun : MonoBehaviour , IWeapon
         Bullet bul2 = bullet2.GetComponent<Bullet>();
         if (bul2 != null)
         {
-            bul2.damage = damage;
+            bul2.damage = damage * shooter.damage;
         }
         Rigidbody2D rb2 = bullet2.GetComponent<Rigidbody2D>();
         rb2.AddForce((firePoint.right) * bulletForce, ForceMode2D.Impulse);
@@ -46,7 +46,7 @@ public class Shotgun : MonoBehaviour , IWeapon
         Bullet bul3 = bullet3.GetComponent<Bullet>();
         if (bul3 != null)
         {
-            bul3.damage = damage;
+            bul3.damage = damage * shooter.damage;
         }
         Rigidbody2D rb3 = bullet3.GetComponent<Rigidbody2D>();
         rb3.AddForce((firePoint.right) * bulletForce, ForceMode2D.Impulse);

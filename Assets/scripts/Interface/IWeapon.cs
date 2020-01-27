@@ -5,7 +5,7 @@ using UnityEngine;
 public interface IWeapon
 {
 
-    void Shoot(GameObject bulletPrefab, Transform firePoint);
+    void Shoot(GameObject bulletPrefab, Transform firePoint, Shooting shooter);
     void Setup(float rpm, int dmg, int bullet, float bulletSpeed);
 }
 public enum WeaponType

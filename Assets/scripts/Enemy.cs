@@ -47,9 +47,9 @@ public class Enemy : MonoBehaviour
         //player.gameObject.GetComponent<Rigidbody2D>().AddForce((transform.position + player.transform.position) * 150000, ForceMode2D.Impulse);
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        hp = hp - damage;
+        hp = hp - (int)damage;
         if (hp <= 0)
         {
             Die();

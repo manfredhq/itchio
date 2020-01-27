@@ -74,6 +74,11 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         IBonus bonus = collision.gameObject.GetComponent<IBonus>();
         if (bonus != null)
         {

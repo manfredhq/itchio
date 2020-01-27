@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loot:
-  - {fileID: 7406117310180415195, guid: e936cf148ac80e54fa39c10e2e27bc50, type: 3}
+  - {fileID: 4324890063715420614, guid: 67cf57acd0e4c5946a6dad03f54a8483, type: 3}
+  - {fileID: 6264417031116062635, guid: 22cdae2d164d7b14f8a7db080797358c, type: 3}
   player: {fileID: 1945028097173138905, guid: 3513fba2cb4c52b40b7195eabff48490, type: 3}
   moveSpeed: 2
   hp: 10

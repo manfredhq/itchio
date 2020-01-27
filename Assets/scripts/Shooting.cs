@@ -18,7 +18,7 @@ public class Shooting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        weapon.SetActive(true);
     }
 
     // Update is called once per frame
@@ -33,7 +33,7 @@ public class Shooting : MonoBehaviour
 
     private void Shoot()
     {
-        weapon.GetComponent<IWeapon>().Shoot(bulletPrefab, firePoint);
+        weapon.GetComponent<IWeapon>().Shoot(bulletPrefab, firePoint, this);
 
     }
 }

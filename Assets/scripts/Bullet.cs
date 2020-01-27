@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
 
     public GameObject hitEffect;
-    public int damage;
+    public float damage;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name != "Player" && collision.gameObject.name != "Bullets(Clone)")
