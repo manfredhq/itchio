@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
 
     public float moveSpeed = 5f;
 
+    public List<GameObject> weaponList;
+
     public float TimeInvulnerability = 3f;
     private float NextTimeCanBeHitted = 0f;
 
@@ -85,6 +87,15 @@ public class Player : MonoBehaviour
             bonus.makeAction(this);
             Destroy(collision.gameObject);
         }
+        IWeapon weapon = collision.gameObject.GetComponent<IWeapon>();
+        if (weapon != null)
+        {
+            GameObject newWeapon = Instantiate(collision.gameObject, new Vector3(10000,10000,-1000), Quaternion.identity);
+            newWeapon.GetComponent<SpriteRenderer>().sprite = null;
+            GetComponent<Shooting>().weapon = newWeapon;
+            
+        }
+        Destroy(collision.gameObject);
     }
 
     public void GainXp(int amount)

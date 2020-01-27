@@ -58,6 +58,12 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        float rng = Random.Range(0f, 100f);
+        if (rng < 5)
+        {
+            Debug.Log("LOOT");
+            Instantiate(loot[Random.Range(0, loot.Count)],transform.position, Quaternion.identity);
+        }
         player.gameObject.GetComponent<Player>().GainXp(xpDrop);
         Destroy(gameObject);
     }
