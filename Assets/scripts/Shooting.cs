@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-
+    public GameObject weapon;
     public Transform firePoint;
 
     public int damage = 3;
@@ -33,13 +33,7 @@ public class Shooting : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Bullet bul = bullet.GetComponent<Bullet>();
-        if(bul != null)
-        {
-            bul.damage = damage;
-        }
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
+        weapon.GetComponent<IWeapon>().Shoot(bulletPrefab, firePoint);
+
     }
 }

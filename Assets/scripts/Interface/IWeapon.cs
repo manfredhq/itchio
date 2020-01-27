@@ -4,16 +4,13 @@ using UnityEngine;
 
 public interface IWeapon
 {
-    string name { get; set; }
-    int damage { get; set; }
-    
-    float bulletForce { get; set; } 
-    float RPM { get; set; }
 
-    public WeaponType weaponType { get; set; }
+    void Shoot(GameObject bulletPrefab, Transform firePoint);
+    void Setup(float rpm, int dmg, int bullet, float bulletSpeed);
 }
 public enum WeaponType
 {
     pistol,
-    shotgun
+    shotgun,
+    burstM4
 }

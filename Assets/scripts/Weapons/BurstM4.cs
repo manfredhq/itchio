@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pistol : MonoBehaviour, IWeapon
+public class BurstM4 : MonoBehaviour, IWeapon
 {
     public int damage;
     public float bulletForce;
@@ -21,6 +21,13 @@ public class Pistol : MonoBehaviour, IWeapon
     }
     public void Shoot(GameObject bulletPrefab, Transform firePoint)
     {
+        
+        StartCoroutine(Temporise(RPM, bulletPrefab, firePoint));
+        
+    }
+
+    IEnumerator Temporise(float timer, GameObject bulletPrefab, Transform firePoint)
+    {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bul = bullet.GetComponent<Bullet>();
         if (bul != null)
@@ -29,5 +36,14 @@ public class Pistol : MonoBehaviour, IWeapon
         }
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
+        yield return new WaitForSecondsRealtime(timer);
+        GameObject bullet2 = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bul2 = bullet2.GetComponent<Bullet>();
+        if (bul2 != null)
+        {
+            bul2.damage = damage;
+        }
+        Rigidbody2D rb2 = bullet2.GetComponent<Rigidbody2D>();
+        rb2.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
     }
 }
