@@ -4,7 +4,7 @@ using UnityEngine;
 using Pathfinding;
 public class SpawnEnnemy : MonoBehaviour
 {
-
+    public GameObject ennemieContainer;
     public List<Enemy> enemies;
     public Transform target;
 
@@ -41,6 +41,7 @@ public class SpawnEnnemy : MonoBehaviour
         for (int i = 0; i < SpawnAtATime; i++)
         {
             Enemy enemy = Instantiate(enemies[Random.Range(0, enemies.Count)],transform.position, Quaternion.identity);
+            enemy.gameObject.transform.SetParent(ennemieContainer.transform);
             enemy.GetComponent<Enemy>().player = target;
             enemy.GetComponent<AIDestinationSetter>().target = target;
             enemy.gameObject.name = "enemy";
