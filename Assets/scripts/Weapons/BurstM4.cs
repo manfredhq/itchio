@@ -7,8 +7,12 @@ public class BurstM4 : MonoBehaviour, IWeapon
     public float damage;
     public float bulletForce;
     public float RPM;
+    float IWeapon.RPM { get => RPM; set => RPM = value; }
+
+
     public int nbBullet;
     public WeaponType weaponType = WeaponType.pistol;
+
 
 
     // Start is called before the first frame update
@@ -23,11 +27,11 @@ public class BurstM4 : MonoBehaviour, IWeapon
     public void Shoot(GameObject bulletPrefab, Transform firePoint, Shooting shooter)
     {
         
-        StartCoroutine(Temporise(RPM, bulletPrefab, firePoint, shooter));
+        StartCoroutine(Temporise( bulletPrefab, firePoint, shooter));
         
     }
 
-    IEnumerator Temporise(float timer, GameObject bulletPrefab, Transform firePoint, Shooting shooter)
+    IEnumerator Temporise( GameObject bulletPrefab, Transform firePoint, Shooting shooter)
     {
         for (int i = 0; i < nbBullet; i++)
         {
@@ -39,7 +43,7 @@ public class BurstM4 : MonoBehaviour, IWeapon
             }
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
-            yield return new WaitForSecondsRealtime(timer);
+            yield return new WaitForSecondsRealtime(0.075f);
         }
         
     }

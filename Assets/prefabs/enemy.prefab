@@ -102,7 +102,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.7193747, y: 0}
+  m_Offset: {x: 3.822544, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -113,7 +113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 23.438744, y: 16}
+  m_Size: {x: 23.64508, y: 16}
   m_EdgeRadius: 0
 --- !u!114 &3150944002410709384
 MonoBehaviour:
@@ -130,9 +130,10 @@ MonoBehaviour:
   loot:
   - {fileID: 4324890063715420614, guid: 67cf57acd0e4c5946a6dad03f54a8483, type: 3}
   - {fileID: 6264417031116062635, guid: 22cdae2d164d7b14f8a7db080797358c, type: 3}
+  - {fileID: 1850147740125006467, guid: 6d8719a0afc9f084da08216689cf66ec, type: 3}
   player: {fileID: 1945028097173138905, guid: 3513fba2cb4c52b40b7195eabff48490, type: 3}
   moveSpeed: 2
-  hp: 10
+  hp: 5
   damage: 1
   xpDrop: 1
 --- !u!50 &3326136375866516919

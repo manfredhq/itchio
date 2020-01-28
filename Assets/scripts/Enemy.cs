@@ -56,6 +56,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void ScaleStats(int scaleValue)
+    {
+        hp *= scaleValue;
+        damage *= scaleValue;
+    }
     private void Die()
     {
         float rng = Random.Range(0f, 100f);

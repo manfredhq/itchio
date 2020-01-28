@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pistol : MonoBehaviour, IWeapon
+public class Thompson : MonoBehaviour, IWeapon
 {
     public float damage;
     public float bulletForce;
+    
+    public WeaponType weaponType = WeaponType.pistol;
     public float RPM;
     float IWeapon.RPM { get => RPM; set => RPM = value; }
-    public WeaponType weaponType = WeaponType.pistol;
 
 
     // Start is called before the first frame update

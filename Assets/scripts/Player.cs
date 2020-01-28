@@ -93,7 +93,8 @@ public class Player : MonoBehaviour
             GameObject newWeapon = Instantiate(collision.gameObject, new Vector3(10000,10000,-1000), Quaternion.identity);
             newWeapon.GetComponent<SpriteRenderer>().sprite = null;
             GetComponent<Shooting>().weapon = newWeapon;
-            
+
+
         }
         Destroy(collision.gameObject);
     }

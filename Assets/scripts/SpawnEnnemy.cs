@@ -41,6 +41,7 @@ public class SpawnEnnemy : MonoBehaviour
         for (int i = 0; i < SpawnAtATime; i++)
         {
             Enemy enemy = Instantiate(enemies[Random.Range(0, enemies.Count)],transform.position, Quaternion.identity);
+            enemy.ScaleStats(SpawnAtATime);
             enemy.gameObject.transform.SetParent(ennemieContainer.transform);
             enemy.GetComponent<Enemy>().player = target;
             enemy.GetComponent<AIDestinationSetter>().target = target;

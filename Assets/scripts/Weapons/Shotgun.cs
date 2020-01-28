@@ -7,6 +7,7 @@ public class Shotgun : MonoBehaviour , IWeapon
     public int damage;
     public float bulletForce;
     public float RPM;
+    float IWeapon.RPM { get => RPM; set => RPM = value; }
     public int nbBullet;
     public WeaponType weaponType = WeaponType.shotgun;
 
