@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
