@@ -5,8 +5,12 @@ using UnityEngine;
 public interface IWeapon
 {
     float RPM { get; set; }
+    float damage { get; set; }
+    float bulletForce { get; set; }
+    int nbBullet { get; set; }
+    WeaponType weaponType { get; set; }
     void Shoot(GameObject bulletPrefab, Transform firePoint, Shooting shooter);
-    void Setup(float rpm, int dmg, int bullet, float bulletSpeed);
+    void Setup(float rpm, float dmg, int bullet, float bulletSpeed);
 }
 public enum WeaponType
 {

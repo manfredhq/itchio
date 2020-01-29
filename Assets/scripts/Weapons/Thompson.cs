@@ -5,16 +5,23 @@ using UnityEngine;
 public class Thompson : MonoBehaviour, IWeapon
 {
     public float damage;
+    float IWeapon.damage { get => damage; set => damage = value; }
     public float bulletForce;
-    
-    public WeaponType weaponType = WeaponType.pistol;
+    float IWeapon.bulletForce { get => bulletForce; set => bulletForce = value; }
     public float RPM;
     float IWeapon.RPM { get => RPM; set => RPM = value; }
 
 
+    public int nbBullet;
+    int IWeapon.nbBullet { get => nbBullet; set => nbBullet = value; }
+
+    public WeaponType weaponType = WeaponType.thompson;
+    WeaponType IWeapon.weaponType { get => weaponType; set => weaponType = value; }
+
+
     // Start is called before the first frame update
 
-    public void Setup(float rpm = 0.5f, int dmg = 1, int bullet = 1, float bulletSpeed = 20f)
+    public void Setup(float rpm = 0.5f, float dmg = 1, int bullet = 1, float bulletSpeed = 20f)
     {
         RPM = rpm;
         damage = dmg;

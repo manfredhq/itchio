@@ -67,7 +67,17 @@ public class Enemy : MonoBehaviour
         if (rng < 5)
         {
             Debug.Log("LOOT");
-            Instantiate(loot[Random.Range(0, loot.Count)],transform.position, Quaternion.identity);
+            var weaponDrop = Instantiate(loot[Random.Range(0, loot.Count)],transform.position, Quaternion.identity);
+            IWeapon weapon = weaponDrop.GetComponent<IWeapon>();
+            float randomRpm = Random.Range(weapon.RPM - weapon.RPM / 10, weapon.RPM + weapon.RPM / 10);
+            float randomDamage = Random.Range(weapon.damage - weapon.damage / 10, weapon.damage + weapon.damage / 10);
+            int randomBullet = 1;
+            if (weapon.weaponType == WeaponType.burstM4)
+            {
+                randomBullet = Random.Range(weapon.nbBullet - 1, weapon.nbBullet + 2);
+            }
+            float randomBulletSpeed = Random.Range(weapon.bulletForce - weapon.bulletForce / 10, weapon.bulletForce + weapon.bulletForce / 10);
+            weapon.Setup(randomRpm,randomDamage,randomBullet,randomBulletSpeed);
         }
         player.gameObject.GetComponent<Player>().GainXp(xpDrop);
         Destroy(gameObject);

@@ -48,6 +48,7 @@ MonoBehaviour:
   damage: 3
   bulletForce: 20
   RPM: 0.6
+  nbBullet: 1
   weaponType: 0
 --- !u!212 &6264417031116062678
 SpriteRenderer:

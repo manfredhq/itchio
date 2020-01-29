@@ -1198,7 +1198,7 @@ PrefabInstance:
     - target: {fileID: 6264417031116062677, guid: 22cdae2d164d7b14f8a7db080797358c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.098
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 6264417031116062677, guid: 22cdae2d164d7b14f8a7db080797358c,
         type: 3}
@@ -2696,6 +2696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: RPM
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850147740125006464, guid: 6d8719a0afc9f084da08216689cf66ec,
+        type: 3}
+      propertyPath: nbBullet
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1850147740125006467, guid: 6d8719a0afc9f084da08216689cf66ec,
         type: 3}
