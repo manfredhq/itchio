@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Thompson : MonoBehaviour, IWeapon
 {
+    public string weaponName;
+    string IWeapon.weaponName { get => weaponName; set => weaponName = value; }
     public float damage;
     float IWeapon.damage { get => damage; set => damage = value; }
     public float bulletForce;
@@ -26,7 +28,9 @@ public class Thompson : MonoBehaviour, IWeapon
         RPM = rpm;
         damage = dmg;
         bulletForce = bulletSpeed;
-        weaponType = WeaponType.pistol;
+        weaponType = WeaponType.thompson;
+        weaponName = "Thompson";
+
     }
     public void Shoot(GameObject bulletPrefab, Transform firePoint, Shooting shooter)
     {

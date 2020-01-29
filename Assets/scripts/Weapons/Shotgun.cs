@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shotgun : MonoBehaviour , IWeapon
 {
+    public string weaponName;
+    string IWeapon.weaponName { get => weaponName; set => weaponName = value; }
     public float damage;
     float IWeapon.damage { get => damage; set => damage = value; }
     public float bulletForce;
@@ -26,7 +28,8 @@ public class Shotgun : MonoBehaviour , IWeapon
         RPM = rpm;
         damage = dmg;
         bulletForce = bulletSpeed;
-        weaponType = WeaponType.pistol;
+        weaponType = WeaponType.shotgun;
+        weaponName = "Shotgun";
     }
 
     public void Shoot(GameObject bulletPrefab, Transform firePoint, Shooting shooter)

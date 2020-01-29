@@ -4,6 +4,7 @@ using UnityEngine;
 
 public interface IWeapon
 {
+    string weaponName { get; set; }
     float RPM { get; set; }
     float damage { get; set; }
     float bulletForce { get; set; }
