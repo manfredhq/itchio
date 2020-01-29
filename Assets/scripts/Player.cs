@@ -27,8 +27,10 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        DontDestroyOnLoad(gameObject);
     }
 
+    
     // Update is called once per frame
     void Update()
     {
@@ -92,6 +94,7 @@ public class Player : MonoBehaviour
         {
             GameObject newWeapon = Instantiate(collision.gameObject, new Vector3(10000,10000,-1000), Quaternion.identity);
             newWeapon.GetComponent<SpriteRenderer>().sprite = null;
+            newWeapon.AddComponent<NoDestroy>();
             GetComponent<Shooting>().weapon = newWeapon;
 
 

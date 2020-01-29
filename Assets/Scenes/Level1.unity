@@ -801,6 +801,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -887,6 +888,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d25129a14119714a8550b9693dc89d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &519554187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -981,6 +994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 578331474}
+  - component: {fileID: 578331475}
   m_Layer: 0
   m_Name: Weapon Container
   m_TagString: Untagged
@@ -1005,6 +1019,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578331475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578331473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d25129a14119714a8550b9693dc89d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &596849922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1578,7 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevelName: Level2
-  timeToSurvive: 9999999
+  timeToSurvive: 5
   player: {fileID: 998969673}
 --- !u!4 &958519718
 Transform:
@@ -1600,6 +1626,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 163904919}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &998969674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998969673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d25129a14119714a8550b9693dc89d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &998969679 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1945028097173138905, guid: 3513fba2cb4c52b40b7195eabff48490,
