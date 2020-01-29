@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 157661487468422607}
   - component: {fileID: 157661487468422606}
   - component: {fileID: 157661487468422579}
-  - component: {fileID: 3150944002410709384}
   - component: {fileID: 3326136375866516919}
   - component: {fileID: 4669049871088825257}
   - component: {fileID: 3194512629431439417}
   - component: {fileID: 6007315754880656000}
   - component: {fileID: 8557055886715266691}
+  - component: {fileID: 1844685586503015755}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -116,27 +116,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 23.64508, y: 16}
   m_EdgeRadius: 0
---- !u!114 &3150944002410709384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157661487468422605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f3c829ff92083419b42fbdfa76a411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loot:
-  - {fileID: 4324890063715420614, guid: 67cf57acd0e4c5946a6dad03f54a8483, type: 3}
-  - {fileID: 6264417031116062635, guid: 22cdae2d164d7b14f8a7db080797358c, type: 3}
-  - {fileID: 1850147740125006467, guid: 6d8719a0afc9f084da08216689cf66ec, type: 3}
-  player: {fileID: 1945028097173138905, guid: 3513fba2cb4c52b40b7195eabff48490, type: 3}
-  moveSpeed: 2
-  hp: 5
-  damage: 1
-  xpDrop: 1
 --- !u!50 &3326136375866516919
 Rigidbody2D:
   serializedVersion: 4
@@ -248,6 +227,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af69f09fcb17cd46bb10e3f8750a500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1844685586503015755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157661487468422605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f2de385988ad04a95bed7e69116c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loot:
+  - {fileID: 4324890063715420614, guid: 67cf57acd0e4c5946a6dad03f54a8483, type: 3}
+  - {fileID: 6264417031116062635, guid: 22cdae2d164d7b14f8a7db080797358c, type: 3}
+  - {fileID: 1850147740125006467, guid: 6d8719a0afc9f084da08216689cf66ec, type: 3}
+  player: {fileID: 0}
+  moveSpeed: 2
+  hp: 5
+  damage: 1
+  xpDrop: 1
 --- !u!1 &8528354014888459186
 GameObject:
   m_ObjectHideFlags: 0

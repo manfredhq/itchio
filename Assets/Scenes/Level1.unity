@@ -1193,6 +1193,11 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3150944002410709384, guid: 7471ffcfed28c1149a8a09f6ec7827d1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3194512629431439417, guid: 7471ffcfed28c1149a8a09f6ec7827d1,
         type: 3}
       propertyPath: maxSpeed
@@ -1604,7 +1609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevelName: Level2
-  timeToSurvive: 5
+  timeToSurvive: 25
   player: {fileID: 998969673}
 --- !u!4 &958519718
 Transform:

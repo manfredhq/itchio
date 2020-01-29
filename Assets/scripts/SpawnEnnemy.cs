@@ -5,7 +5,7 @@ using Pathfinding;
 public class SpawnEnnemy : MonoBehaviour
 {
     public GameObject ennemieContainer;
-    public List<Enemy> enemies;
+    public List<GameObject> enemies;
     public Transform target;
 
     public float WaitTimeBetweenSpawn = 2f;
@@ -41,12 +41,13 @@ public class SpawnEnnemy : MonoBehaviour
         RoundToAugmentSpawning--;
         for (int i = 0; i < SpawnAtATime; i++)
         {
-            Enemy enemy = Instantiate(enemies[Random.Range(0, enemies.Count)],transform.position, Quaternion.identity);
+            GameObject ennemyGO = Instantiate(enemies[Random.Range(0, enemies.Count)],transform.position, Quaternion.identity);
+            IEnnemy enemy = ennemyGO.GetComponent<IEnnemy>();
             enemy.ScaleStats(SpawnAtATime);
-            enemy.gameObject.transform.SetParent(ennemieContainer.transform);
-            enemy.GetComponent<Enemy>().player = target;
-            enemy.GetComponent<AIDestinationSetter>().target = target;
-            enemy.gameObject.name = "enemy";
+            ennemyGO.gameObject.transform.SetParent(ennemieContainer.transform);
+            enemy.player = target;
+            ennemyGO.GetComponent<AIDestinationSetter>().target = target;
+            ennemyGO.name = "enemy";
         }
         
     }

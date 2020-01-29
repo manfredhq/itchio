@@ -8,14 +8,16 @@ public class LevelManager : MonoBehaviour
     public string nextLevelName;
     public float timeToSurvive;
     public GameObject player;
+    private float timeToSurviveScaled;
 
     public void Start()
     {
+        timeToSurviveScaled = Time.time + timeToSurvive;
         player = GetComponent<GetPlayer>().getPlayer();
     }
     public void FixedUpdate()
     {
-        if (Time.time > timeToSurvive)
+        if (Time.time > timeToSurviveScaled)
         {
             SceneManager.LoadScene(nextLevelName);
         }
