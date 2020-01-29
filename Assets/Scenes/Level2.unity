@@ -2054,7 +2054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevelName: Level3
-  timeToSurvive: 20
+  timeToSurvive: 9999999
   player: {fileID: 0}
   SpawnPoint: {fileID: 1987486910}
 --- !u!4 &1892121149
