@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Pathfinding;
 public class Enemy : MonoBehaviour
 {
     public List<GameObject> loot;
@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = GetComponent<GetPlayer>().getPlayer().transform;
+        GetComponent<AIDestinationSetter>().target = GetComponent<GetPlayer>().getPlayer().transform;
     }
 
     // Update is called once per frame
